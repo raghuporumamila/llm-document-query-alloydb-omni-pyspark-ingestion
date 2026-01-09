@@ -16,8 +16,7 @@ CREATE TABLE IF NOT EXISTS pdf_documents (
     content TEXT,
     embedding vector(1536) -- Must match OpenAI text-embedding-3-small
 );
-### Build the image
+## Build the image
 docker build -t alloydb-omni-vector-pyspark-ingestion-app .
-
-### Run the container
+## Run the container
 docker run --env-file ./.env --network alloydb-spark-net --rm alloydb-omni-vector-pyspark-ingestion-app
