@@ -1,0 +1,7 @@
+pandas
+pyspark
+openai
+pypdf
+dotenv
+pyarrow
+tiktoken
